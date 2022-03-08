@@ -1,0 +1,90 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+:root {
+    --Lightcyan: hsl(193, 38%, 86%);
+    --Neongreen: hsl(150, 100%, 66%);
+    --GrayishBlue: hsl(217, 19%, 30%);
+    --DarkGrayishBlue: hsl(217, 19%, 24%);
+}
+::-webkit-scrollbar{
+    display: none;
+}
+body {
+
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--DarkGrayishBlue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main-box{
+    width: clamp(300px,30%,450px);
+    height: clamp(200px,250px,450px);
+    background-color: var(--GrayishBlue);
+    border-radius: 15px;
+}
+#content{
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    padding: 1rem;
+    
+}
+#adviceno{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    width: 100%;
+    text-align: center;
+    color: var(--Neongreen);
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+#advice{ 
+    height: 90%;
+    vertical-align: center;
+    text-align: center;
+    font-weight: 800;
+    padding: 10px;
+    font-size: 1.3rem;
+    font-family: 'Manrope', sans-serif;
+    letter-spacing: 2px;
+    color: whitesmoke;
+    overflow: scroll;
+  
+}
+#pattern{
+    width: 80%;
+    height: 10px;
+    margin: auto;
+    background-image: url("./images/pattern-divider-mobile.svg");
+    background-size: cover;
+}
+#dice{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border-radius: 100%;
+    background-color: var(--Lightcyan);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%; 
+    transform: translate(-50%,80%);
+}
+#dice:hover{
+    background-color: var(--Neongreen);
+    box-shadow: 0 0 15px 15px hsla(150, 100%, 66%, 0.336)   ;
+}
+#dice-svg{
+    width: 20px;
+    height: 20px;
+    background-image: url("./images/icon-dice.svg");
+    background-size: cover;
+}
+
